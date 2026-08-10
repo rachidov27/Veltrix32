@@ -247,6 +247,19 @@
 
     footer strong { color: #999; }
 
+
+    .social-grid { grid-template-columns: repeat(3, 1fr); }
+    .social-card { display: block; transition: .2s ease; }
+    .social-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(229,9,20,.45);
+      background: linear-gradient(145deg, rgba(229,9,20,.10), rgba(255,255,255,.025));
+    }
+    .social-card p { color: #aaa; }
+    @media (max-width: 800px) {
+      .social-grid { grid-template-columns: 1fr; }
+    }
+
     @media (max-width: 800px) {
       .hero { min-height: 650px; }
       .cards { grid-template-columns: 1fr; }
@@ -300,6 +313,50 @@
           <h3>واجهة سينمائية</h3>
           <p>تصميم داكن بطابع سينمائي يمنح المحتوى المساحة التي يستحقها.</p>
         </article>
+      </div>
+    </section>
+
+
+    <section id="community">
+      <h2 class="section-title">تابع VELTRIX32 PRO</h2>
+      <p class="section-desc">جميع روابطنا الرسمية في مكان واحد.</p>
+
+      <div class="cards social-grid">
+        <a class="card social-card" href="https://www.youtube.com/@Veltrix32" target="_blank" rel="noopener noreferrer">
+          <div class="icon">▶️</div>
+          <h3>YouTube</h3>
+          <p>@Veltrix32</p>
+        </a>
+
+        <a class="card social-card" href="https://www.tiktok.com/@veltrix32t" target="_blank" rel="noopener noreferrer">
+          <div class="icon">♪</div>
+          <h3>TikTok</h3>
+          <p>@veltrix32t</p>
+        </a>
+
+        <a class="card social-card" href="https://www.facebook.com/profile.php?id=61592759626695" target="_blank" rel="noopener noreferrer">
+          <div class="icon">f</div>
+          <h3>Facebook</h3>
+          <p>VELTRIX PRO</p>
+        </a>
+
+        <a class="card social-card" href="https://t.me/Veltrix32" target="_blank" rel="noopener noreferrer">
+          <div class="icon">✈️</div>
+          <h3>Telegram</h3>
+          <p>@Veltrix32</p>
+        </a>
+
+        <a class="card social-card" href="https://discord.gg/gCxBPMFquQ" target="_blank" rel="noopener noreferrer">
+          <div class="icon">💬</div>
+          <h3>Discord</h3>
+          <p>VELTRIX PRO</p>
+        </a>
+
+        <a class="card social-card" href="https://wa.me/213666479771" target="_blank" rel="noopener noreferrer">
+          <div class="icon">💚</div>
+          <h3>WhatsApp</h3>
+          <p>تواصل معنا</p>
+        </a>
       </div>
     </section>
 
